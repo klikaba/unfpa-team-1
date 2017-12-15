@@ -8,6 +8,5 @@ import { DiseaseComponent } from 'app/disease/disease.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Welcome!';
-  subtitle = 'powered by: Klika & UNFPA';
+ 
 }

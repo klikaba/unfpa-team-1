@@ -1,37 +1,43 @@
 
+<router-outlet></router-outlet>
+
 <body class="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-	<a class="navbar-brand js-scroll-trigger" href="#page-top">
-		<span class="d-block d-lg-none">Start Bootstrap</span>
-		<span class="d-none d-lg-block">
-			<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/icons/profile.jpg" alt="">
-		</span>
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a  [routerLink]="['/homepage']" class="nav-link js-scroll-trigger" href="#homepage">Homepage</a>
-			</li>
-			<li class="nav-item">
-				<a [routerLink]="['/contact']" class="nav-link js-scroll-trigger" href="#experience">Opšte informacije</a>
-			</li>
-			<li class="nav-item">
-				<a  class="nav-link js-scroll-trigger" href="#education">Rizično ponašanje </a>
-			</li>
-			<li class="nav-item">
-				<a [routerLink]="['/disease']" class="nav-link js-scroll-trigger" href="#skills">Spolno prenosive bolesti</a>
-			</li>
-			<li class="nav-item">
-					<a [routerLink]="['/calculator']" class="nav-link js-scroll-trigger" href="#skills">Kalkulator rizika</a>
-				</li>
-			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#interests">Zatraži savjet</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+<div >
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" style=" background: linear-gradient(to top right, #fb1819, #ea3939, #c11819);">
+			<a class="navbar-brand js-scroll-trigger"  href="#page-top">
+				<span class="d-block d-lg-none">Start Bootstrap</span>
+				<span class="d-none d-lg-block">
+					<img class="img-fluid img-profilee rounded-circle mx-auto mb-2" style="height: 150px; opacity: 20%;" src="images/blodDropIcon.png" alt="">
+				</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<!--<li class="nav-item">
+						<a [routerLink]="['/homepage']" class="nav-link js-scroll-trigger" href="#homepage">Homepage</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger"  [routerLink]="['/homepage']">Opšte informacije</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" [routerLink]="['/prevention']">Rizično ponašanje </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" [routerLink]="['/disease']">Spolno prenosive bolesti</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" [routerLink]="['/calculator']">Kalkulator rizika</a>
+						</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" [routerLink]="['/contact']">Zatraži savjet</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+</div>
+
 
 <router-outlet></router-outlet>
+
