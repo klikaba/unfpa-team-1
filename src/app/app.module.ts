@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from 'app/homepage/homepage.component';
 import { DiseaseComponent } from 'app/disease/disease.component';
@@ -24,6 +24,7 @@ import { CalculatorComponent } from 'app/calculator/calculator.component';
     ContactComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
