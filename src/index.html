@@ -12,11 +12,13 @@
   <meta name="theme-color" content="#f48c5b">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
 <body class="background-display">
 	<!--  register service worker /--> 
 	<script>
-    if ('serviceWorker' in navigator) {
+    //UNCOMMENT LATER
+    /*if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -24,7 +26,7 @@
       // registration failed :(
       console.log('ServiceWorker registration failed: ', err);
     });
-  }
+  }*/
   </script>
 
   <app-root>Loading...</app-root>
