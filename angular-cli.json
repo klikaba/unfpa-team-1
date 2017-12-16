@@ -12,7 +12,7 @@
         "favicon.ico",
         "manifest.json",
         "service-worker.js",
-        "images"
+        "assets/images"
         
       ],
       "index": "index.html",
