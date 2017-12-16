@@ -11,7 +11,8 @@
         "assets",
         "favicon.ico",
         "manifest.json",
-        "service-worker.js"
+        "service-worker.js",
+        "images"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -24,7 +25,10 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
-        "app/homepage/css/resume.min.css"
+        "app/homepage/css/resume.min.css",
+        "app/homepage/css/devicons.min.css",
+        "app/homepage/css/simple-line-icons.css "
+        
         
 
       ],
