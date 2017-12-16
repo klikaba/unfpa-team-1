@@ -1,66 +1,181 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h1 class="title">Kalkulaator</h1>
-    </div>
-    <div class="panel-body" >
-        <p class="text"> Ja sam:</p>
-        <label class="container text">Muškog spola
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-        <label class="container text">Ženskog spola
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-    </div>
+
+<div style="padding-left:0">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="title" style="text-transform: none"><img style="height: 60px;" src="images/calculator.png"> Kalkulator rizika</h1>
+        </div>
+        <div class="panel-body" >
+            {{this.count}}
+            <p class="text"> Ja sam:</p>
+            <label class="container text">
+                <input type="radio" checked="checked" name="radio" (change)="handleChange(0)">
+                <span class="checkmark">Muškog spola</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio" (change)="handleChange(1)">
+                <span class="checkmark">Ženskog spola</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Imam spolne odnose s:</p>
+            <label class="container text">
+                <input type="radio"
+                 name="radio1" (change)="handleChange(1)">
+                <span class="checkmark">Osobama suprotnog spola</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio1" (change)="handleChange(5)">
+                <span class="checkmark">Osobama istog spola</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio1">
+                <span class="checkmark">Osobama oba spola</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> U posljednja tri mjeseca imao/la sam:</p>
+            <label class="container text">
+                <input type="radio" name="radio2" (change)="handleChange(0)">
+                <span class="checkmark">0 spolnih partnera</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio2" (change)="handleChange(1)">
+                <span class="checkmark">1-2 spolna partnera</span>
+            </label>
+            <label class="container text" (change)="handleChange(2)">
+                <input type="radio" name="radio2">
+                <span class="checkmark">3 – 5 spolnih partnera</span>
+            </label>
+            <label class="container text" (change)="handleChange(3)">
+                <input type="radio" name="radio2">
+                <span class="checkmark">6 ili više spolnih partnera</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> U posljednja 12 mjeseca imao/la sam:</p>
+            <label class="container text">
+                <input type="radio" name="radio3" (change)="handleChange(0)">
+                <span class="checkmark">0 spolnih partnera</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio3" (change)="handleChange(1)">
+                <span class="checkmark">1-2 spolna partnera</span>
+            </label>
+            <label class="container text" (change)="handleChange(2)">
+                <input type="radio" name="radio3">
+                <span class="checkmark">3 – 5 spolnih partnera</span>
+            </label>
+            <label class="container text" (change)="handleChange(3)">
+                <input type="radio" name="radio3">
+                <span class="checkmark">6 ili više spolnih partnera</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Da li je moguće da je Vaš partner imao spolni odnos s drugom osobom u istom periodu dok je imao odnose s Vama?</p>
+            <label class="container text">
+                <input type="radio" name="radio4" (change)="handleChange(1)">
+                <span class="checkmark">Da</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio4" (change)="handleChange(0)">
+                <span class="checkmark">Ne</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Tokom spolnih odnosa u vezi:</p>
+            <label class="container text">
+                <input type="radio" name="radio5" (change)="handleChange(4)">
+                <span class="checkmark">Nikad ne koristim kondome</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio5" (change)="handleChange(3)">
+                <span class="checkmark">Često koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(2)">
+                <input type="radio" name="radio5">
+                <span class="checkmark">Ponekad koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(1)">
+                <input type="radio" name="radio5">
+                <span class="checkmark">Uvijek koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(0)">
+                <input type="radio" name="radio5">
+                <span class="checkmark">Nisam bio/la u vezi</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Tokom spolnih odnosa van veze:</p>
+            <label class="container text">
+                <input type="radio" name="radio6" (change)="handleChange(4)">
+                <span class="checkmark">Nikad ne koristim kondome</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio6" (change)="handleChange(3)">
+                <span class="checkmark">Često koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(2)">
+                <input type="radio" name="radio6">
+                <span class="checkmark">Ponekad koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(1)">
+                <input type="radio" name="radio6">
+                <span class="checkmark">Uvijek koristim kondome</span>
+            </label>
+            <label class="container text" (change)="handleChange(0)">
+                <input type="radio" name="radio6">
+                <span class="checkmark">Nisam bio/la u vezi</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Ja i/ili moj partner/i koristimo alkohol ili psihoaktivne droge tokom ili prije spolnih odnosa.</p>
+            <label class="container text">
+                <input type="radio" name="radio7" (change)="handleChange(1)">
+                <span class="checkmark">Da</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio7" (change)="handleChange(0)">
+                <span class="checkmark">Ne</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Ja i/ili moj partner/i smo koristili droge intravenski:</p>
+            <label class="container text">
+                <input type="radio" name="radio8" (change)="handleChange(1)">
+                <span class="checkmark">Da</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio8" (change)="handleChange(0)">
+                <span class="checkmark">Ne</span>
+            </label>
+        </div>
+
+        <div class="panel-body" >
+            <p class="text"> Prakticiram sljedeće spolne odnose bez zaštite:</p>
+            <label class="container text">
+                <input type="radio" name="radio9" (change)="handleChange(1, 1)">
+                <span class="checkmark">Oralne</span>
+            </label>
+            <label class="container text">
+                <input type="radio" name="radio9" (change)="handleChange(1,1)">
+                <span class="checkmark">Vaginalne</span>
+            </label>
+            <label class="container text" (change)="handleChange(2,1)">
+                <input type="radio" name="radio">
+                <span class="checkmark">Analne</span>
+            </label>
+            <button class="btn btn-primary" ng-disabled="!isFinished" [routerLink]="['/contact']" >Submit</button>
+        </div>
+
+        <div style="margin: 50px"></div>
+
+    </div>    
 </div>
-1.	Ja sam:
-Muškog spola 0
-Ženskog spola 1
-2.	Imam spolne odnose s:
-Osobama suprotnog spola 1
-Osobama istog spola 2
-Osobama oba spola 3
-3.	U posljednja tri mjeseca imao/la sam:
-0 spolnih partnera 0
-1-2 spolna partnera 1
-3	– 5 spolnih partnera 2
-6 ili više spolnih partnera 3
-4.	U posljednja 12 mjeseca imao/la sam:
-0 spolnih partnera 0
-1-2 spolna partnera 1
-3 – 5 spolnih partnera 2
-6 ili više spolnih partnera 3
-5.	Da li je moguće da je Vaš partner imao spolni odnos s drugom osobom u istom periodu dok je imao odnose s Vama?
-Da 1
-Ne 0
-6.	Tokom spolnih odnosa u vezi:
-Nikad ne koristim kondome 4
-Ponekad koristim kondome 3
-Često koristim kondome 2
-Uvijek koristim kondome 1
-Nisam bio/la u vezi 0
-7.	Tokom spolnih odnosa van veze:
-Nikad ne koristim kondome 3
-Ponekad koristim kondome 2
-Često koristim kondome 1
-Uvijek koristim kondome 0
-
-8.	Ja i/ili moj partner/i koristimo alkohol ili psihoaktivne droge tokom ili prije spolnih odnosa.
-Da 1
-Ne 0
-
-9.	Ja i/ili moj partner/i smo koristili droge intravenski:
-Da 1
-Ne 0
-
-10.	Prakticiram sljedeće spolne odnose bez zaštite:
-Oralne 1
-Vaginalne 1
-Analne 1
-
-
-
-
-
-

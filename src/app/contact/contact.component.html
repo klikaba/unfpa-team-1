@@ -1,14 +1,71 @@
-Sve bakterijske spolno prenosive bolesti pravovremeno primijećene su izlječive.
-Najčešća spolno prenosiva bolest na svijetu je hlamidija.
-Neliječene gonoreja i hlamidija mogu uzrokovati neplodnost kod žena.
-Sve spolno prenosive bolesti povećavaju rizik od HIV infekcije.
+
+<div class="panel panel-default" *ngIf="this.realCount > 0 && this.realCount < 6 ">
+        <div class="panel-heading">
+            <h1 class="title"><img style="height: 55px;" src="images/light-bulb.png">Rezultat</h1>
+        </div>
+        <div class="panel-body" >
+            <p class="text">
+                    Tvoje seksualno ponašanje nije rizično, ali ti savjetujemo da se dodatno edukuješ
+                    <a [routerLink]="['/prevention']">Počni ovdje!</a>
+            </p>
+        </div>
+</div>
+
+<div class="panel panel-default" *ngIf="this.realCount > 5 && this.realCount < 19 ">
+    <div class="panel-heading">
+        <h1 class="title">Rezultat</h1>
+    </div>
+    <div class="panel-body" >
+        <p class="text">
+                <label style="font-weight: 700"><img style="height: 55px;" src="images/warning.png">Tvoje seksualno ponašanje je rizično.</label>  
+         <br> Najbolje bi bilo da potražiš savjet svog ljekara porodične medicine ili ginekologa.
+                <a [routerLink]="['/prevention']">Počni ovdje!</a>
+                
+        </p>
+    </div>
+</div>
+
+<div class="panel panel-default" *ngIf="this.realCount > 18">
+    <div class="panel-heading">
+        <h1 class="title">Rezultat</h1>
+    </div>
+    <div class="panel-body" >
+        <p class="text">
+                <label style="font-weight: 700"><img style="height: 55px;" src="images/warning.png">Tvoje seksualno ponašanje prema rezultatima ovog kalkulatora je visoko rizično.</label>
+            <br>    Idi ljekaru porodične medicine ili ginekologu odmah. Sve što se na vrijeme otkrije i počne liječiti, ima dobru prognozu.
+                <a [routerLink]="['/prevention']">Počni ovdje!</a>
+        </p>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="title"><img style="height: 55px;" src="images/search.png"> Savjeti:</h1>
+    </div>
+    <div class="panel-body" >
+        <p class="text"> </p>
+        <ul class="text">
+                <li>Koristi kondom pri svakom spolnom odnosu.</li>
+                <li>Ograniči broj svojih seksualnih partnera! Ne zaboravi da jedan spolni odnos s osobom znači i spolni odnos sa svim osobama s kojima je ta osoba imala odnos.</li>
+                <li>Pitaj svog partnera da li je moguće da ima spolno prenosivu bolest.</li>
+                <li>Izbjegavaj dirati ranice na spolnim organima!</li>
+                <li>Ukoliko se desi da se ubodete o odloženu iglu na ulici, odmah se javite ljekaru i sa sobom ponesite iglu!</li>
+                <li>U slučaju spolno prenosive bolesti, liječiti se moraju oba partnera!!!</li>
+        </ul>
+    </div>
+</div>
 
 
-Koristiti kondom pri svakom spolnom odnosu.
-Ograniči broj svojih seksualnih partnera! Ne zaboravi da jedan spolni odnos s osobom znači i spolni odnos sa svim osobama s kojima je ta osoba imala odnos.
-Pitaj svog partnera da li je moguće da ima spolno prenosivu bolest.
-Izbjegavaj dirati ranice na spolnim organima!
-testiraj se svake godine na gonoreju i hlamidiju ukoliko si mlada osoba od 
-
-Liječiti se moraju oba partnera!!!
-
+<div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="title"><img style="height: 65px;" src="images/pitanje.png"> PITAJ NAS!</h1>
+        </div>
+        <div class="panel-body" >
+            <p class="text"> </p>
+            <p class="text">
+                    Ukoliko nisi dobio/la tražene informacije na našoj stranici ili imaš nedoumice vezane za svoje seksualno zdravlje, svoje pitanje anonimno napiši našem savjetniku koji će ti svoj odgovor poslati na e-mail koji će ostati strogo povjerljiv.
+            <br>
+                    <label>Email: savjetovaliste@klika.ba</label>
+            </p>
+        </div>
+</div>
