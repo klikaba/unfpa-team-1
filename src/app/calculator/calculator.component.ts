@@ -14,10 +14,14 @@ export class CalculatorComponent implements OnInit {
     
   }
 
-   handleChange(point, isTrue) {
+   handleChange1(point, isTrue) {
       myGlobals.setValue(point);
       if(isTrue === 1)
         this.isFinished = true;
+    }
+
+    handleChange(point) {
+      myGlobals.setValue(point);
     }
 
     checkIsDone
