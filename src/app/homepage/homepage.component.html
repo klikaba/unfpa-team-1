@@ -1,24 +1,91 @@
+<style>
+    #imgDiv{
+        margin-left:0px auto;
+        margin-top: -50px;
+    }
+    #textDiv{
+        margin-top: 110px;
+        font-size: 18px;
+        color:#626263;
+    }
+    #textDiv p{
+        margin-top: 90px;
+    }
+    @media only screen and(max-width:1024px)
+    {
+        textDiv{
+            margin-left:500px;
+        }
+        image1div img{
+            margin-left:-200px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        body{
+            text-align: justify;
+        }
+        p{
+            /*margin-left: 80px;*/
+            margin-top: 10px;
+            font-size:16px;
+            text-align: justify;
+            height: 200px;
+        }
+        #textDiv
+        {
+            width:300px;
+            margin-left: 170px;
+            margin-top: -200px;
+            margin-bottom:80px;
+        }
+        #image1div img{
+            margin-left:160px;
+            height: 400px;
+            width: 300px;
+            margin-top:10px;
+        }
+        #image1div{
+            margin-top:50px;
+        }
+    }
+    #image1div{
+        margin-left: -170px;
+        margin-top: -70px;
+    }
 
-<div class="container" style="margin-left: 30px;margin-right:30px;margin-top:100px;">
-
+</style>
+<!--<div id="imgDiv">
+    <img src="images/icons/landinggg.png" height="450">
+</div>
 <div class="row">
-<div class="card col-md-6" style="width: 20rem;">
-
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="textDiv" class="col-md-12">
+               <p>Inform yourself and share thoughts with others....don't be afraid</p>
         </div>
-      </div>
-      <div class="card col-md-6" style="width: 20rem;">
-
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+</div>-->
+<div class="row" id="image1div">
+    <div class="col-md-4">
+            <img style="float:left" src="images/icons/circle1landing.png" height="450" width="300"/>
+    </div>
+    <div class="col-md-8">
+        <div id="textDiv">
+                <p>Znate li razliku između spolno prenosive bolesti i infekcije? Ona itekako postoji!
+                        Spolno prenosiva infekcija predstavlja ulazak uzročnika u organizam koji ne mora odmah dovesti do tegoba. Bolest nastaje onda kada uzročnik izazove primjetnu štetu u organizmu.
+                        Ovo je važno jer pravovremeno primjećene i prepoznate bakterijske spolno prenosive bolesti su izlječive.
+                         </p>
+        </div>
+    </div>
+</div>
+<div class="row" id="image1div">
+        <div class="col-md-4">
+                <img style="float:left" src="images/icons/circle2landing.png" height="450" width="300"/>
+        </div>
+        <div class="col-md-8">
+        <div id="textDiv">
+                <p>Najčešća spolno prenosiva bolest na svijetu je hlamidija.
+                        Neliječene gonoreja i hlamidija mogu uzrokovati neplodnost kod žena.
+                        HVP je najčešći uzrok raka maternice kod žena.
+                        Sve spolno prenosive bolesti povećavaju rizik od HIV infekcije.
+                         </p>
+        </div>
         </div>
     </div>
